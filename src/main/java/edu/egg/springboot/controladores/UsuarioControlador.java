@@ -18,7 +18,7 @@ public class UsuarioControlador {
 
     @GetMapping("/todos")
     public ModelAndView mostrarUsuarios() {
-        ModelAndView mav = new ModelAndView("usuarios-listas");
+        ModelAndView mav = new ModelAndView("usuarios-lista");
         List<Usuario> usuarios = servicio.obtenerUsuarios();
         mav.addObject("usuarios", usuarios);
 
